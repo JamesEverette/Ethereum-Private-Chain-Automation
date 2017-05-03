@@ -1,0 +1,26 @@
+pragma solidity ^0.4.2;
+
+contract MyToken {
+  string public name;
+  string public symbol;
+  uint256 public totalSupply;
+
+
+  /* Create an array of user balances */
+
+
+  event Transfer(address indexed from, address indexed to, uint256 value);
+
+  function MyToken(uint256 initialSupply, string tokenName, string tokenSymbol) {
+    balanceOf[msg.sender] = initialSupply;
+    name = tokenName;
+    symbol = tokenSymbol;
+    totalSupply = initialSupply;
+  }
+
+
+  /* Here we will write the function */
+  /*  for transferring our currency  */
+
+
+}
